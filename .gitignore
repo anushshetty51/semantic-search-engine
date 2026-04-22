@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+db/search.db
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/
+redis_data/
