@@ -241,26 +241,3 @@ The next serious upgrades would be:
 4. Add structured logging, tracing, and request-level metrics.
 5. Introduce background jobs for scheduled recrawls and reindexing.
 6. Add authentication, rate limiting, and safer public deployment defaults.
-
-## Resume Positioning
-
-This project is strongest when presented as a backend/search systems project with a polished product surface.
-
-Good resume bullets:
-
-- Built a deployed hybrid search engine combining lexical BM25-style ranking with sentence-transformer embeddings and weighted score fusion.
-- Implemented an async crawler and indexing pipeline that ingests documentation pages into SQLite and generates search-ready lexical and semantic indexes.
-- Exposed search, health, and runtime stats endpoints with FastAPI and Redis-backed caching for repeated-query acceleration.
-- Built a React search dashboard that visualizes ranking mode, latency, cache behavior, and corpus statistics for live search workflows.
-
-## Suggested Walkthrough
-
-If you want to show the full product flow:
-
-1. Open the frontend and explain the three ranking modes.
-2. Run the same query in `keyword`, `semantic`, and `hybrid`.
-3. Point out health and cache stats.
-4. Explain the crawl -> index -> serve pipeline.
-5. Close with how you would scale the retrieval layer beyond SQLite.
-
-That sequence usually lands much better than just saying "I built a search engine."
